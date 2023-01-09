@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: hsl(216, 12%, 54%);
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: rgb(29, 29, 32);
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    border-radius: 2em;
+    height: 30rem;
+    width: 30rem;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+/*   RATING COMPONENT   */
+
+.star{
+    margin: 1em;
+}
+
+.img-wrapper{
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper::after{
+    content:'';
+    display:block;
+    padding-bottom: 100%;
+}
+
+
+h1{
+    color: white;
+    font-size: 2em;
+}
+
+.ratings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.rating{
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.rating::after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.rating:hover{
+    color:white;
+    background-color: hsl(217, 12%, 63%);
+}
+
+/*   class .highlighted is added by JS for every star previous of star we hover over   */
+.rating.highlighted{
+    color:white;
+    background-color: hsl(217, 12%, 63%);
+}
+
+.rating.chosen{
+    color:white;
+    background-color: hsl(217, 12%, 63%);
+}
+ 
+
+.rating:active{
+    background-color: orange;
+    transition: 3ms all ease-in-out;
+}
+
+#submit{
+    width: 100%;
+    padding: 1em;
+    letter-spacing: 0.4em;
+    font-size: 0.8em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2em;
+    background-color: rgb(233, 135, 22);
+    color:hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    border: unset;      /*  remove default styling of the button as border, shadow, transform  */
+    transform: unset;
+
+}
+
+#submit:hover{
+    color: orange;
+    background-color: hsl(0, 0%, 100%);
+    transition: all 3ms ease-in;
+}
+
+#submit:active{
+    background-color: hsl(0, 0%, 86%);
+
+}
+
+
+/*   THANK YOU COMPONENT   */
+
+#thank{
+    position: absolute;
+    align-items: center;
+    visibility: hidden;
+}
+
+.thank-img{
+    width: 50%;
+}
+
+.your-rating{
+    padding:  0.6em 2em;
+    font-size: 0.9em;
+    color: rgb(233, 135, 22);
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 2em;
+}
+
+.orange{
+    color: rgb(233, 135, 22);
+}
+
+a{
+    text-decoration: none;
+}
