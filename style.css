@@ -92,19 +92,19 @@ h1{
 }
 
 /*   class .highlighted is added by JS for every star previous of star we hover over   */
-.rating.highlighted{
+.rating.highlighted-hover{
     color:white;
     background-color: hsl(217, 12%, 63%);
 }
 
-.rating.chosen{
+.rating.highlighted-chosen{
     color:white;
-    background-color: hsl(217, 12%, 63%);
+    background-color: rgb(233, 135, 22)
 }
  
 
 .rating:active{
-    background-color: orange;
+    background-color: rgb(233, 135, 22);
     transition: 3ms all ease-in-out;
 }
 
@@ -122,13 +122,11 @@ h1{
     text-transform: uppercase;
     border: unset;      /*  remove default styling of the button as border, shadow, transform  */
     transform: unset;
-
 }
 
 #submit:hover{
-    color: orange;
+    color: rgb(233, 135, 22);
     background-color: hsl(0, 0%, 100%);
-    transition: all 3ms ease-in;
 }
 
 #submit:active{
