@@ -8,6 +8,11 @@
     font-family: 'Overpass', sans-serif;
 }
 
+button{
+    border: unset;      /*  remove default styling of the button as border, shadow, transform  */
+    transform: unset;
+}
+
 body{
     background-color: rgb(29, 29, 32);
 }
@@ -120,8 +125,6 @@ h1{
     background-color: rgb(233, 135, 22);
     color:hsl(0, 0%, 100%);
     text-transform: uppercase;
-    border: unset;      /*  remove default styling of the button as border, shadow, transform  */
-    transform: unset;
 }
 
 #submit:hover{
@@ -181,5 +184,9 @@ a{
 
     h1{
         font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1em;
     }
 }
