@@ -162,3 +162,20 @@ h1{
 a{
     text-decoration: none;
 }
+
+/*   PHONES   */
+
+@media (max-width: 480px){
+
+    .container{
+        width: 90vw;
+        height: 90vw;
+        max-width: 30rem;
+        max-height: 30rem;
+        padding: 1em;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+}
